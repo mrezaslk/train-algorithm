@@ -21,7 +21,6 @@ var numEquivDominoPairs = function (dominoes) {
   let count = 0;
   for (let [a, b] of dominoes) {
     let key = a < b ? `${a}-${b}` : `${b}-${a}`;
-    console.log("key", key);
     if (map.has(key)) {
       count += map.get(key);
       map.set(key, map.get(key) + 1);
