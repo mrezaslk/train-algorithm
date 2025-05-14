@@ -3,7 +3,6 @@ function palindrome(num) {
   const numToString = String(num);
   const result = [];
   if (typeof num === "string") return "Not valid";
-  
 }
 
-console.log(palindrome(34322122));
+palindrome(121);
